@@ -1,0 +1,13 @@
+here we are using Model to send data from controller to frontend page 
+for e.g. by clicking on email we are sending 
+and to map the function or method with front end you have 
+to properly match href in frontend component with @RequestMapping
+for e.g
+href="@{'/user/'+${c.cId}+'/contact'}" in frontend component
+here 
+@ is use for page direction or mapping
+$ is use for object provided by backend in model
+| pie is use to send atribute through onclick function 
+
+@RequestMapping("/{cId}/contact")
+public String showContactDetail(@PathVariable("cId") Integer cId){} in backend function
